@@ -1,17 +1,16 @@
-html {
-	background-color: #000000;
-}
+
 
 body {
+	background-color: #000;
 	font: 400 15px Lato, sans-serif;
 	line-height: 1.8;
-	color: #333D51;
+	color: #000000;
 }
 
 h2 {
 	font-size: 24px;
 	text-transform: uppercase;
-	color: #333D51;
+	color: #FFF;
 	font-weight: 600;
 	margin-bottom: 30px;
 }
@@ -19,7 +18,7 @@ h2 {
 h4 {
 	font-size: 19px;
 	line-height: 1.375em;
-	color: #333D51;
+	color: #FFF;
 	font-weight: 400;
 	margin-bottom: 30px;
 }
@@ -127,17 +126,17 @@ h4 {
 }
 
 .navbar li a, .navbar .navbar-brand {
-	color: #333D51 !important;
+	color: #FFF !important;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-	color: #333D51 !important;
+	color: #000 !important;
 	background-color: #fff !important;
 }
 
 .navbar-default .navbar-toggle {
 	border-color: transparent;
-	color: #333D51 !important;
+	color: #000 !important;
 }
 
 #form-container {
