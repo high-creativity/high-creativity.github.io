@@ -158,7 +158,11 @@ p {
 }
 
 #form-container {
-	background-color: #F4F3EA;
+	background-color: #000;
+}
+
+#contact {
+	background-color: #000;
 }
 
 footer{
