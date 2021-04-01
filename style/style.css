@@ -121,15 +121,22 @@ p {
 	transition: box-shadow 0.5s;
 }
 
+.btn-wrapper {
+	text-align: center;
+}
+
 .btn{
-	color: #333D51;
-	background-color: #F4F3EA;
-	font-weight: bold;
+	color: #FFF;
+	background-color: #000;
+	border-radius: 25px;
+	margin-top: 2%;
+	justify-content: center;
+	align-items: center;
 }
 
 .btn:hover {
-	background-color: #333D51;
-	color: #F4F3EA;
+	color: #000;
+	background-color: #FFF;
 }
 
 .navbar {
