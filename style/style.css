@@ -7,11 +7,12 @@ body {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 36px;
 	text-transform: uppercase;
 	color: #FFF;
 	font-weight: 600;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 h4 {
