@@ -139,6 +139,12 @@ p {
 	background-color: #FFF;
 }
 
+img:hover {
+    webkit-filter: blur(2px); /* Chrome, Safari, Opera */
+    filter: blur(2px);
+	transition: 1s ease;
+}
+
 .navbar {
 	margin-bottom: 0;
 	background-color: #000000;
