@@ -34,8 +34,13 @@ p {
 }
 
 .video {
-    width: 100%;
-	margin-bottom: -10%;
+    width: 10%;
+	margin-bottom: -11%;
+}
+
+.gif-wrapper {
+	width: 1%;
+	margin-bottom: -11%;
 }
 
 .event-image-container {
@@ -140,9 +145,9 @@ p {
 	background-color: #FFF;
 }
 
-img:hover {
+.event-image:hover {
     webkit-filter: blur(2px); /* Chrome, Safari, Opera */
-    filter: blur(2px);
+    filter: blur(3px);
 	transition: 1s ease;
 }
 
