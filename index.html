@@ -10,219 +10,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home-page-style.css">
     <link rel="stylesheet" href="form.css" >
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <div href="#myPage">
-              <a href="#myPage">
-                  <img class="navbar-brand" src="images/logo.png"></img>
-              </a>
+<body>
+    <!-- The video -->
+    <div class="overlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="videos/page-video.mp4" type="video/mp4">
+      </video>
+
+
+      <div class="split-wrapper">
+          <div class="split left" onclick="goToHighCreativity()">
+              <div class="centered">
+                  <img src="images/HighCreativity-logo.png">
+              </div>
           </div>
-	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#eventos">EVENTOS</a></li>
-	        <li><a href="#services">SERVIÇOS</a></li>
-	        <li><a href="#contact">CONTACTO</a></li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
 
-    <div id="video" class="container-fluid">
-        <div class="row">
-            <video class="video" playsinline autoplay loop muted>
-                <source src="videos/home-video.mp4" type="video/mp4"></source>
-            </video>
-        </div>
-    </div>
-
-    <div id="eventos" class="container-fluid">
-      <div class="row">
-          <br><h2>Eventos</h2><br>
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/WU-PDA-19-20.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg"> Warm Up PDA 19/20 </a>
+          <div class="split right">
+            <div class="centered">
+              <img src="img_avatar.png" alt="Avatar man">
             </div>
-
-        </div>
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/AP-19.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">After Prom '19</a>
-            </div>
-
-        </div>
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/WU-PDA-18-19.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">Warm Up PDA 18/19</a>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/AP-18.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">After Prom '18</a>
-            </div>
-
-        </div>
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/WU-PDA-17-18.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">Warm Up PDA 17/18</a>
-            </div>
-
-        </div>
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/AP-17.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">After Prom '17</a>
-            </div>
-
-        </div>
-
-    <div class="row">
-
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/WU-PDA-16-17.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">Warm Up PDA 16/17</a>
-            </div>
-
-        </div>
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/AP-16.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">After Prom 2016</a>
-            </div>
-        </div>
-        <div class="col-md-4 event-image-container">
-            <a href="">
-                <img src="images/HR-16.jpg" class="event-image"></img>
-            </a>
-            <div class="btn-wrapper">
-                <a class="btn btn-default btn-lg">High Restart '16</a>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="row" id="form-container">
-        <div class="col-md-6 col-md-offset-3" id="form_container">
-            <h2>Contact Me</h2>
-            <p>
-               Please send your message below. I will get back to you as soon as possible!
-            </p>
-            <form class="gform" method="POST" data-email="bruno.codinha@hotmail.com"
-                action="https://script.google.com/macros/s/AKfycbzIILkJ2Wih7BNa4oSP0YBjZiXW1fOX4mxvY7zgbQ/exec">
-                <div class="form-elements">
-                    <div class="row">
-                        <div class="col-sm-12 form-group pure-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7" placeholder="Tell me what's on your mind..." required></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 form-group pure-group">
-                            <label for="name">Your Name:</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="" required>
-                        </div>
-                        <div class="col-sm-6 form-group pure-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="your.name@email.com" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button type="submit" class="btn btn-lg btn-default pull-right button-success" >Send</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="thankyou_message" style="display:none;">
-                    <h2><em>Thanks</em> for contacting me!
-                        I will get back to you soon! :)</h2>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="contact" class="container-fluid bg-grey">
-      <h2 class="text-center">CONTACT INFO</h2>
-      <div class="row">
-        <div class="col-sm-3">
-          <div style="color: #333D51">
-            <span class="glyphicon glyphicon-map-marker"></span> Lisbon, PT
           </div>
-        </div>
-        <div class="col-sm-3">
-          <a href="tel: +351910477440" style="color: #333D51;">
-            <span class="glyphicon glyphicon-phone"></span> +351 910477440
-          </a>
-        </div>
-        <div class="col-sm-3">
-          <a href="mailto: bruno.codinha@tecnico.ulisboa.pt" style="color: #333D51;">
-            <span class="glyphicon glyphicon-envelope"></span> bruno.codinha@tecnico.ulisboa.pt
-          </a>
-        </div>
-        <div class="col-sm-3">
-          <a href="https://wa.me/351910477440" style="color: #333D51;">
-            <img src="images/whatsapp-small.png"> WhatsApp
-          </a>
-        </div>
       </div>
-    </div>
 
-    <footer class="container-fluid text-center">
-    	<div class="footer-container">
-    		<div class="row">
-    			<a class="col-sm-3" href="https://github.com/SkyVandal/" target="_blank">
-    				<img src="images/github.png">
-    			</a>
-    			<a class="col-sm-3" href="https://www.linkedin.com/in/bruno-codinha-070269175/" target="_blank">
-    				<img src="images/linkedin.png">
-    			</a>
-    			<a class="col-sm-3" href="https://www.instagram.com/brunocodinha/" target="_blank">
-    				<img src="images/instagram-sketched.png">
-    			</a>
-    			<a class="col-sm-3" href="https://www.facebook.com/bruno.codinha.3/" target="_blank">
-    				<img src="images/facebook.png">
-    			</a>
-    		</div>
-    	</div>
-    </footer>
-
-<script data-cfasync="false" src="form-submission-handler.js"></script>
 </body>
-</html>
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>

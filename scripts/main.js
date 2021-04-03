@@ -23,3 +23,7 @@ $(document).ready(function(){
     });
   });
 })
+
+function goToHighCreativity(){
+    window.location.href = "highCreativity.html";
+}
