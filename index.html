@@ -16,26 +16,25 @@
 
 <body>
     <!-- The video -->
-    <div class="overlay"></div>
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="videos/page-video.mp4" type="video/mp4">
-      </video>
+    <div class="overlay">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+            <source src="videos/page-video.mp4" type="video/mp4">
+        </video>
 
-
-      <div class="split-wrapper">
-          <div class="split left" onclick="goToHighCreativity()">
-              <div class="centered">
-                  <img class="logo" src="images/HighCreativity-logo.png">
-              </div>
-          </div>
-
-          <div class="split right" onclick="goToHighDentity()">
-            <div class="centered">
-              <img class="logo" src="images/HighCreativity-logo.png">
+        <div class="split-wrapper">
+            <div class="split left" onclick="goToHighCreativity()">
+                <div class="centered">
+                    <img class="logo" src="images/logoHC.png">
+                </div>
             </div>
-          </div>
-      </div>
-  </div>
+
+            <div class="split right" onclick="goToHighDentity()">
+                <div class="centered">
+                    <img class="logo" src="images/Logo_Png_HD.png">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script>

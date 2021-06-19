@@ -7,6 +7,14 @@ header {
   overflow: hidden;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 header video {
   position: absolute;
   top: 50%;
@@ -60,14 +68,16 @@ header .overlay {
 .left {
   left: 0;
   background-color: #111;
-  opacity: 0.4;
+  opacity: 0.6;
+  z-index: 1;
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  background-color: red;
-  opacity: 0.4;
+  background-color: yellow;
+  opacity: 0.6;
+  z-index: 1;
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -83,4 +93,8 @@ header .overlay {
 .centered img {
   width: 50%;
   opacity: 1;
+}
+
+.logo {
+    z-index: 1000;
 }

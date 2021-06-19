@@ -122,6 +122,12 @@ p {
 	color: #FFF !important;
 }
 
+.logo {
+	display: block;
+	max-width: 100%;
+}
+
+
 .navbar li a, .navbar  {
 	color: #FFF !important;
 }
