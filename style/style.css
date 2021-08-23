@@ -33,6 +33,18 @@ p {
 	margin-bottom: -11%;
 }
 
+#eventos {
+	margin-top: 10%;
+}
+
+#services {
+	margin-top: 10%;
+}
+
+.servicerow {
+	height: 200px;
+}
+
 .gif-wrapper {
 	width: 100%;
 	height: 100%;
