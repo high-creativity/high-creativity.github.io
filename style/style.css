@@ -43,7 +43,7 @@ p {
 }
 
 #eventos {
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 #services {
@@ -102,6 +102,10 @@ p {
 	font-style: normal;
 }
 
+.tickets-btn {
+	z-index: 1000 !important;
+	margin-top: 11% !important;
+}
 
 .btn-wrapper {
 	text-align: center;
@@ -141,6 +145,7 @@ p {
 
 .navbar-brand {
 	color: #FFF !important;
+
 }
 
 .logo {
@@ -298,6 +303,14 @@ footer .glyphicon {
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   opacity: 1;
+}
+
+.copyright-wrapper {
+	margin-top: 1%;
+}
+
+.copyright {
+	color: #333D51;
 }
 
 
